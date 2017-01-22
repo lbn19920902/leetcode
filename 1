@@ -1,0 +1,30 @@
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have exactly one solution.
+
+
+
+
+
+public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int [] pp;
+        pp= new int [2];
+        for(int i=0;i<nums.length;i++){
+            for(int p=0;p<nums.length;p++){
+                if (nums[i]+nums[p]==target){
+                    if(i!=p){
+                    if(i>p){
+                      pp[0]=p;
+                    pp[1]=i;  
+                        
+                    }
+                    else{
+                    pp[0]=i;
+                    pp[1]=p;
+                }}}
+            }
+        }
+        return pp;
+    }
+}
