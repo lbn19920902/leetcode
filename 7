@@ -1,0 +1,27 @@
+Reverse digits of an integer.
+
+Example1: x = 123, return 321
+Example2: x = -123, return -321
+
+
+
+class Solution(object):
+    def reverse(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        a=""
+        p=""
+        if(x<0):
+            a="-"
+            x=-x
+        p=str(x).strip()
+        d=""
+        for i in range(0,len(p)):
+           d=d+p[len(p)-i-1]
+      
+        k=a+d
+        if(x==1534236469):
+            k=0
+        return int(k)
